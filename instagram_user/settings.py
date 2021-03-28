@@ -15,7 +15,7 @@ SPIDER_MODULES = ['instagram_user.spiders']
 NEWSPIDER_MODULE = 'instagram_user.spiders'
 
 # Enter one or both of them
-USERID = ['544022417']
+USERID = []
 USERNAME = []
 
 SPLASH_URL = 'http://localhost:8050'
