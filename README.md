@@ -21,7 +21,7 @@ ITEM_PIPELINES = {
 FILES_STORE = './user'
 ```
 
-## Run
+# Run
 
 Start the crawler, store the image and information in local
 
@@ -33,4 +33,28 @@ If you want to save the results in a file
 
 ```bash
 scrapy crawl user_crawler -o results.json
+```
+
+If you want to pause and continue from json url
+
+```bash
+scrapy crawl user_crawler -a continue_url="https://www.instagram.com/graphql/query/?example" -o results2.json
+```
+
+# Result Example
+
+```json
+[
+  {
+    "postid": "544109137850911213",
+    "shortcode": "eNEGDIpcnt",
+    "username": "fenerbahce",
+    "userid": "544022417",
+    "liked": 9412,
+    "caption": "#Fenerbahce Instagram'da!",
+    "comment": 3617,
+    "image_list": "https://instagram.fadb5-1.fna.fbcdn.net/v/t51.2885-15/e15/11372296_1482408185383472_2111744389_n.jpg?tp=1&_nc_ht=instagram.fadb5-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=ho2Ti7etdMYAX8QPKjq&ccb=7-4&oh=31289d2306d12e2c76df451f3f6b65ba&oe=608A9359&_nc_sid=86f79a;",
+    "video_list": ""
+  }
+]
 ```
