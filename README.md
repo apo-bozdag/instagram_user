@@ -2,6 +2,10 @@
 
 Create a crawler to download Profile detail into the local folder via the username or user id.
 
+**INSTALLATION**
+
+``pip install -r requirements.txt``
+
 # Settings
 
 Enter username or userid to caption the profile:
